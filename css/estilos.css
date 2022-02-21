@@ -7,7 +7,7 @@
 body{
     font-family: 'Courier New', courier;
     font-size:  18px;
-    background: #b4b3aa;
+    background: #3a3931;
 }
 
 .contenedor{
@@ -21,7 +21,7 @@ body{
 
 header{
 
-    background: #3a3737;
+    background: #cc383883;
     width: 100%;
 
 }
