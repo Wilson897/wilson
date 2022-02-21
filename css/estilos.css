@@ -1,0 +1,161 @@
+*{
+
+    margin: 0px;
+    padding: 0;
+}
+
+body{
+    font-family: 'Courier New', courier;
+    font-size:  18px;
+    background: #b4b3aa;
+}
+
+.contenedor{
+    background:#161415;
+    max-width: 1400px;
+    margin:30px auto;
+    overflow: hidden;
+    
+}
+
+
+header{
+
+    background: #3a3737;
+    width: 100%;
+
+}
+
+ header nav a{
+
+    text-decoration:none;
+    width: 100%;
+    display: inline-block;
+    padding:20px;
+    width: 200px;
+    color:rgb(238, 225, 225);
+    font-size:1.2em;
+    text-align: center; 
+ }
+header nav a:hover{
+
+    background: #727071;
+}
+
+main{
+    background: #554a4d;
+    width: 75%;
+    float: right;
+
+}
+.imagen img{
+
+    width:100%;
+    
+}
+
+article h2{
+
+color:#d1b2af;
+font-size: 2em;
+margin-top: 10px;
+margin-bottom: 20px;
+padding-left: 15px;
+}
+
+article p{
+    color: rgb(145, 128, 128);
+    padding: 15px;
+    font-size: 1.2em;
+    line-height: 30px;
+    text-align: justify;
+}
+
+aside{
+    color:#e4d2d0;
+    background:#161415;
+    width: 25%;
+    float: left;
+    line-height: 25px;
+}
+
+.aside1 {
+
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+.enlaces li{
+
+    list-style: none;
+    padding: 20px;
+}
+
+.enlaces li a {
+
+    text-decoration: none;
+    padding: 15px;
+    color: rgb(145, 128, 128);
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.enlaces li a:hover{
+
+    background: #473b41;
+}
+.csm{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+.csm li{
+    display:inline-table;
+}
+.csm a{
+    padding:10px;
+}
+
+footer{
+    background: #58423e;
+    width: 100%;
+    float: left;
+    font-size: 1.3em;
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (max-width:700px)
+{
+    body{
+        font-size:14px;
+        background:#000;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    aside{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+    body{
+        font-size:12px ;
+        background: #EEEBD0;
+        
+    }
+
+
+    aside{
+        display: none;
+       /* overflow: hidden;*/
+    }
+    
+}
+   
