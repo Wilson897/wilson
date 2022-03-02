@@ -13,23 +13,30 @@
 <body>
     <h2>fizz buzz</h2>
     <script>
-        let i=1;
-        for(i = 1; i <= 100; i++)
+        fizz_buzz()
+
+        
+        function fizz_buzz()
         {
+            let i=1;
+            for(i = 1; i <= 100; i++)
+            {
             if ((i % 3 == 0) && (i % 5 == 0)){
-            document.write(i + ".-"+ "Fizz-Buzz" + '<br>');}
-            else {
-                if (i % 3 == 0)
-                    document.write(i + ".- "+"Fizz"+ '<br>');
+                document.write(i + ".-"+ "Fizz-Buzz" + '<br>');}
                 else {
-                    if (i % 5 == 0)
-                         document.write(i + ".-"+ "Buzz" + '<br>');
+                    if (i % 3 == 0)
+                        document.write(i + ".- "+"Fizz"+ '<br>');
                     else {
-                         document.write(i+ '<br>');
+                        if (i % 5 == 0)
+                             document.write(i + ".-"+ "Buzz" + '<br>');
+                        else {
+                             document.write(i+ '<br>');
+                        }
                     }
                 }
             }
         }
+
     </script>
 </body>
 </html>
