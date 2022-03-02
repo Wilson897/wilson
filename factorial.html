@@ -16,13 +16,14 @@
     factorial(fact)
     function factorial(fact) 
     {
+        let ant=fact;
         let aux=1;
         while(fact!=0)
         {
             aux=aux*fact;
             fact=fact-1;
         }
-        document.write("factorial es : "+aux+'<br>');
+        document.write("el numero "+ant+" su factorial es : "+aux+'<br>');
     }
     </script>
     
