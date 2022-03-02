@@ -11,7 +11,19 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <labe>La Fecha Actual Es:</labe><input id="resultad" type="text" readonly=""><br>  
+       <input type="button" class="btnn" onclick="fecha()" value="Mostrar Fecha Actual">
+      <script>
+      
+
+          function fecha(){
+           var fecha =new Date();
+           var month = fecha.getUTCMonth()+1;
+           var day = fecha.getUTCDate();
+           var year = fecha.getUTCFullYear();
+           document.getElementById('resultad').value=(day+"/"+month+"/"+year);    
+          }   
+      </script>
 
 </body>
 </html>

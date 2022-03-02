@@ -11,22 +11,30 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        let fact=5;
-    factorial(fact)
-    function factorial(fact) 
-    {
-        let ant=fact;
-        let aux=1;
-        while(fact!=0)
-        {
-            aux=aux*fact;
-            fact=fact-1;
-        }
-        document.write("el numero "+ant+" su factorial es : "+aux+'<br>');
-    }
-    </script>
+    <main>
+        <label>Ingrese el numero:<br></label><input id="fact" type="text"><br>
+       <label>El factoriales:<br></label><input id="result" type="text" readonly="">  
+       <input type="button" class="btn" onclick="factorial()" value="Calcular">
+        <ul>
+            
+            <script>
+
+            function factorial() 
+            {
+                var fact =Number(document.getElementById('fact').value);
+                var aux =1;
+
+                while(fact!=0)
+                {
+                    aux=aux*fact;
+                    fact=fact-1;
+                }
+                document.getElementById('result').value=(aux);
+            }
+            </script>
+        </ul>
     
+    </main> 
 
 </body>
 </html>

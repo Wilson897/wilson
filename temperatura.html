@@ -11,24 +11,26 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <label>Ingrese el dato:<br></label><input id="temp" type="text"><br>
+       <label>El Clima Esta:<br></label><input id="result" type="text" readonly="">  
+       <input type="button" class="btn" onclick="temperatura()" value="Calcular">
     <script>
-        let temp=26
-    temperatura(temp)
-    function temperatura(temp) 
+    
+    function temperatura() 
     {
-        document.write(temp+'<br>');
+        var temp =Number(document.getElementById('temp').value);
+
         if(temp>=-10 && temp<=15)
         {
-            document.write("-- Frio --"+'<br>');
+            document.getElementById('result').value=(" Frio");
         }
         else if(temp>=16 && temp<=25)
             {
-                document.write("-- Templado --"+'<br>');
+                document.getElementById('result').value=(" Templado");
             }
             else if(temp>=26 && temp<=40)
                 {
-                    document.write("-- Calor --- "+'<br>');
+                    document.getElementById('result').value=(" Calor");
                 }
     }
     </script>
